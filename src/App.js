@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import AccountPage from "./AccountPage";
 
 function App() {
   return (
-    <div className="App">
+    <AccountPage/>
+    /* <div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <img
+          style={{
+            borderRadius: "50%",
+            display: "block",
+            background: `url('https://cdn.icon-icons.com/icons2/1186/PNG/512/1490135017-visa_82256.png') black`,
+            backgroundPosition: "center",
+            backgroundSize: "auto 80px",
+          }}
+          className="profileP"
+          src={profilepic}
+          alt=""
+        />
+        <p>Account Information</p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://en.wikipedia.org/wiki/Potato"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn about a great starch, the potato.
         </a>
       </header>
-    </div>
+
+      <ul className="account">
+        <li>
+          <InfoSection title="General" info={generalInfo} />
+        </li>
+        <li>
+          <InfoSection title="Measurements" info={measurementInfo} />
+        </li>
+        <li>
+          <InfoSection title="Address" info={addressInfo} />
+        </li>
+      </ul>
+    </div> */
   );
 }
 

@@ -1,7 +1,10 @@
 import React from "react";
 import profilepic from "./images/profilepic.png";
 import "./AccountPage.css";
+import "./index.css"
 import InfoSection from "./components/InfoSection";
+import GeneralInfoSection from "./components/GeneralInfoSection";
+import GoalCompletionSection from "./components/GoalCompletionSection";
 
 const generalInfo = [
   {
@@ -96,6 +99,11 @@ function AccountPage() {
         <li><InfoSection title="General" info={generalInfo} /></li>
         <li><InfoSection title="Measurements" info={measurementInfo} /></li>
         <li><InfoSection title="Address" info={addressInfo} /></li>
+
+        <li><GeneralInfoSection title="General" info={generalInfo}/></li>
+        <li><GoalCompletionSection title="Daily Goal Completion"/></li>
+
+        
       </ul>
     </div>
   );

@@ -1,0 +1,21 @@
+.goal-circle {
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+.goal-circle li {
+    display: inline-block;
+    padding: 20px;
+    width: 200;
+    height: 200;
+}
+
+.goal-card {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    min-width: 25rem;
+    margin-top: 1rem; /* 4px */
+    vertical-align: top;
+}
